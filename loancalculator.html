@@ -8,8 +8,62 @@
 </head>
 <body>
     <h1>LOAN CALCULATOR</h1>
+    <table>
+        <tr><th>
+            Enter Loan Data
+        </th>
+        <td></td>
+        <th>Loan Balance, cummulative Equity, and Intrest</th>
+    </tr>
+    <tr>
+        <td>Amount of Loan (N): </td>
+        <td><input id="amount" onchange="calculate()" type="text"></td>
+        <td rowspan="8">
+            <canvas id="graph" width="400" height="250"></canvas>
+        </td>
+    </tr>
+    <tr>
+        <td>Annual Intrest (%):</td>
+        <td><input id="apr" onchange="calculate()"></td>
+    </tr>
+    <tr>
+        <td>Repayment Period (years):</td>
+        <td><input id="years" onchange="calculate()"</td>
+    </tr>
+    <tr>
+        <td>ZipCode (to find lenders)</td>
+        <td> <input id="zipcode" onchange="calculate()"></td>
+    </tr>
+    <tr>
+        <th>Appropiate payments:</th>
+        <td> <button onclick="calculate()">Calculate</button></td>
+    </tr>
+    <tr>
+        <td>Monthly Payment:</td>
+        <td>N<span class="output" id="Payment"></span></td>
+    </tr>
+    <tr>
+        <td>Total Payment</td>
+        <td>N 
+          <span class="output" id="Payment"></span></td>
+    </tr>
+    <tr>
+        <td>Total Intrest:</td>
+        <td>N <span class="output" id="Payment"></span></td>
+    </tr>
+    <tr>
+        <th> Sponsor:</th>
+        <td colspan="2"> Apply for your loan with one of these lenders</td>
+        <div class="lenders"></div>
+    </tr>
+    </table>
     <script>
+        /*
+        /* this script defines the calcuklate function called by the event handlers in the html aove. 
+        the function reads tghe value from <input> elements , calculates loan paymebts information, displays 
 
+        
     </script>
+
 </body>
 </html>
